@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: query_info
+    description: Contains all executed queries along and their metadata
+    columns:
+      - name: username
+        description: User executing the query
+        tests:
+          - not_null
+      - name: usesuper
+        description: Is user a superuser
+        tests:
+          - not_null
